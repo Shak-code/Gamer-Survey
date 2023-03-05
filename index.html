@@ -1,0 +1,55 @@
+<!DOCTYPE hmtl>
+  <html>
+    <head>
+      <title>Gamer Survey</title>
+      <link rel='stylesheet' href='styles.css'>
+    </head>
+    <body>
+      <h1 id='title'>Gamer Survey</h1>
+      <p id='description'>Thank you for taking the time to do this survey.</p>
+
+      <form id='survey-form' required>
+        
+        <fieldset>
+          <label id='name-label'>Name: <input id='name' type='text' placeholder=' name'  required/></label>
+          <label id='email-label'>Email: <input id='email' type='email'  placeholder=' email' required/></label>
+          <label id='number-label'>Age: <input id='number' type='number'min= '10' max='120'placeholder=' age'/></label>
+        </fieldset>
+
+        <fieldset>
+            <label id='gamingdrop'>When do you game?
+              <select id='dropdown' label='gamingdrop'>
+                <option value="" disabled selected>(Select one)</option>
+                <option value='Always'>Always</option>
+                <option value='never'>Never</option>
+                <option value='sometimes'>Sometimes</option>
+              </select>
+            </label> 
+          </fieldset>
+
+          <fieldset>
+            <label>How do you play games?
+              <label><input type='radio' name='console'value='Xbox' class='inline'/>Xbox</label>
+              <label><input type='radio' name='console' value='Playstation' class='inline'/>Playstation</label>
+              <label><input type='radio' name='console' value='PC' class='inline'/>PC</label>
+            </label>
+          </fieldset>
+          
+          <fieldset>
+            <label>Select all, that describes what type of games you play?
+              <label><input type='checkbox' value='Select option' class='inline'/>Real-time strategy (RTS)</label>
+              <label><input type='checkbox' value='Shooter'class='inline'/>Shooters (FPS and TPS)</label>
+              <label><input type='checkbox' value='RPG'class='inline'/>Role-playing (RPG, ARPG, and More)</label>
+            </label>
+          </fieldset>
+          
+          <fieldset>
+            <label id='textarea'>Leave any comments or suggestions?
+              <textarea type='textarea' placeholder=' Type comments in here'></textarea>
+            </label>
+          </fieldset>
+
+        <input type="submit" value="Submit" id='submit'/>
+      </form>
+    </body>
+  </hmtl>
